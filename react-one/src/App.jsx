@@ -4,12 +4,16 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Message from './components/reactOne'
 import ReactFacts from'./components/reactFacts'
+import Header from './components/Header'
 function App() {
 
   return (
     <>
+    
+    <Header/>
     <Message/>
     <ReactFacts/>
+
       {/* <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />

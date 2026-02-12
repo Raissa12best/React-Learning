@@ -1,10 +1,12 @@
 function Message(){
-    return(
-        <body>
-    <h1 className="header">Welcome , Bienvenue, Buenos Dias</h1>
-      <h2>We can start now!</h2>
-      </body>
-    )
+    
+    return (
+    <div>
+      <h1>
+        Welcome to React
+      </h1>
+    </div>
+  )
 }
 
 export  default Message;

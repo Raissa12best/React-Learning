@@ -9,9 +9,7 @@ function ReactFacts(){
                 <li>Has well over 100k stars on Github</li>
                 <li>Is maintained by Meta</li>
             </ul>
-            {/* <footer>
-                <p> © 2026 built with love by a dev</p>
-            </footer> */}
+            
                  </div>
     )
 }

@@ -2,17 +2,55 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Message from './components/reactOne'
-import ReactFacts from'./components/reactFacts'
-import Header from './components/Header'
+// import Message from './components/reactOne'
+// import ReactFacts from'./components/reactFacts'
+// import Header from './components/Header'
+// import Footer from './components/footer'
+import TextBox from './components/textBox'
+import ChatMessage from './components/chatmessage'
+import ChatBotO from './components/ChatBotO'
+// import SendMessage from'./components/sendMessage'
 function App() {
+  const [chatMessages, setChatMessages] = useState([
+    {
+      message: "Hello, Chatbot",
+      sender: "user",
+      id: "id1",
+    },
+    {
+      message: "Hello, How can I help you today?",
+      sender: "robot",
+      id: "id2",
+    },
+    {
+      message: "What's today's date please",
+      sender: "user",
+      id: "id3",
+    },
+    {
+      message: "Today is February 16",
+      sender: "robot",
+      id: "id4",
+    },
+  ]);
 
   return (
     <>
     
-    <Header/>
+    {/* <Header/>
     <Message/>
     <ReactFacts/>
+    <Footer/> */}
+
+    <TextBox
+    chatMessages={chatMessages}// save any type of values in a prop
+    setChatMessages={setChatMessages}/>
+    <ChatMessage
+    />
+    <ChatBotO
+    chatMessages={chatMessages}//
+    />
+    {/* <SendMessage/> */}
 
       {/* <div>
         <a href="https://vite.dev" target="_blank">

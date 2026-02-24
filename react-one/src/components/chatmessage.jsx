@@ -1,33 +1,31 @@
-function ChatMessage({message,sender} ){
-    // const message=props.message;
-    // const sender=props.sender;
-    // const {message,sender}=props;
-    // if(sender==="robot"){
-    //  return(
-    //      <div className="flex p-20">
-    //          <i className="fa-solid fa-robot text-gray-100 border-2 rounded-xl p-2 bg-green-600"></i>
-    //         {message}
-            
-       
-    //     </div>
-    //  )
-    // }
-    return(
-       
-        <div className="text-center h-20">
-            {sender ==="robot" && 
-            (<i 
-                className="fa-solid fa-robot text-gray-100 border-2 rounded-full p-2 bg-green-600"></i>
+function ChatMessage({ message, sender }) {
+  const isRobot = sender === "robot";
 
-            )}
-            {message }
-            {sender==="user" && // guard operator that work like if statement in jsx
-             (<i 
-                className="fa-solid fa-user text-gray-100 border-2 rounded-full p-2 bg-green-600 "></i>
+  return (
+    <div
+      className={`flex w-full my-2 ${
+        isRobot ? "justify-start" : "justify-end"
+      }`}
+    >
+      <div className="flex items-end gap-2">
+        {isRobot && (
+          <i className="fa-solid fa-robot bg-green-600 text-white p-2 rounded-full" />
+        )}
 
-             )}
-       
+        <div
+          className={`px-4 py-4 rounded-xl max-w-[60%] text-white ${
+            isRobot ? "bg-green-500 " : "bg-blue-500"
+          }`}
+        >
+          {message}
         </div>
-    )
+
+        {!isRobot && (// guard operator works like if statement in jsx
+          <i className="fa-solid fa-user bg-blue-600 text-white p-2 rounded-full" />
+        )}
+      </div>
+    </div>
+  );
 }
+
 export default ChatMessage;

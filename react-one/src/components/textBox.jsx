@@ -30,9 +30,9 @@ function TestBox({chatMessages,setChatMessages}){
   }             // pascal case
  return(
     
-    <div className="flex gap-5 justify-center">
+    <div className="flex flex-grow gap-5 justify-center">
         <input 
-          className="border-2   rounded-lg"
+          className="border-2   rounded-lg px-[12px] py-[10px] font-[15px]"
           placeholder="How can I help you !" 
           size="55"
     

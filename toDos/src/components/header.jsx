@@ -1,10 +1,9 @@
-
 function Header(){
     return(
         <>
          <header className="">
-            <img src="src/assets/chef.png" className="w-16"/>
-           <h1 className="">Chef Claude</h1>
+            
+           <h1 className="text-2xl">todos</h1>
         </header>
        
         </>

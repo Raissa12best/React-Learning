@@ -1,5 +1,5 @@
-/* @import "tailwindcss"; */
-* {
+@import "tailwindcss";
+/* * {
     box-sizing: border-box;
 }
 
@@ -62,4 +62,5 @@ main {
 .add-ingredient-form > button::before {
     content: "+";
     margin-right: 5px;
-}
+} */
+ 

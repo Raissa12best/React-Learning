@@ -1,18 +1,15 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import viteLogo from './assets/vite.svg'
+import heroImg from './assets/hero.png'
 import './App.css'
-import Header from './components/header'
-import Main from './components/main'
+import Counter from './features/counter/counter'
 
 function App() {
   
-
   return (
     <>
-    <Header/>
-    <Main/>
-    
+    <Counter/>
     </>
   )
 }

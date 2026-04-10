@@ -1,11 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import { Provider } from 'react-redux'
-import store from './app/store'
+import { Provider } from 'react-redux';
+import { store } from './components/store';
+import { ThemeProvider } from './components/ThemeContext';
+import App from './App';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <Provider store={store}>
+// In your render function:
+<Provider store={store}>
+  <ThemeProvider>
     <App />
-  </Provider>
-)
+  </ThemeProvider>
+</Provider>

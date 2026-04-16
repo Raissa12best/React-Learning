@@ -1,4 +1,4 @@
- import React, { useReducer } from 'react';
+ import { useReducer } from 'react';
 const initialState = { count: 0 };
 
 function reducer(state, action) {
